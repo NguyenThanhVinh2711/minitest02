@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = []
+    let n = +prompt("Nhap do dai cua mang")
+    let count = 0
+    for (let i = 0; i < n; i++) {
+        let newarr = +prompt("Phan tu thu: " + (i + 1))
+        arr.push(newarr)
+    }
+    function checkcount(){
+        for (let i = 0; i < n; i++) {
+            if (arr[i] %2==0){
+                count++
+            }
+        }
+        return count
+    }
+    let check= checkcount()
+    document.write("Mang : " + arr)
+    document.write("<br/>")
+    document.write("So chan trong mang : " + check)
+
+</script>
+</body>
+</html>
